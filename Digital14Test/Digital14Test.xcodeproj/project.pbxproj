@@ -27,6 +27,10 @@
 		2550028327909504009A28CB /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027D27909504009A28CB /* UIStoryboard.swift */; };
 		2550028427909504009A28CB /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027E27909504009A28CB /* NSObject.swift */; };
 		255002862790952D009A28CB /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255002852790952D009A28CB /* Storyboards.swift */; };
+		2550028C27909A5D009A28CB /* APIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550028827909A5D009A28CB /* APIProxy.swift */; };
+		2550028D27909A5D009A28CB /* ApiResultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550028927909A5D009A28CB /* ApiResultable.swift */; };
+		2550028E27909A5D009A28CB /* APIBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550028A27909A5D009A28CB /* APIBuildable.swift */; };
+		2550028F27909A5D009A28CB /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550028B27909A5D009A28CB /* APIVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		2550027D27909504009A28CB /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		2550027E27909504009A28CB /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		255002852790952D009A28CB /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		2550028827909A5D009A28CB /* APIProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProxy.swift; sourceTree = "<group>"; };
+		2550028927909A5D009A28CB /* ApiResultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultable.swift; sourceTree = "<group>"; };
+		2550028A27909A5D009A28CB /* APIBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBuildable.swift; sourceTree = "<group>"; };
+		2550028B27909A5D009A28CB /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,7 @@
 		2550026D279090F3009A28CB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2550028727909A38009A28CB /* Networking */,
 				2550027027909146009A28CB /* Extensions */,
 				2550026E27909112009A28CB /* Environment.swift */,
 			);
@@ -201,6 +210,17 @@
 				255002712790915A009A28CB /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2550028727909A38009A28CB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2550028A27909A5D009A28CB /* APIBuildable.swift */,
+				2550028827909A5D009A28CB /* APIProxy.swift */,
+				2550028927909A5D009A28CB /* ApiResultable.swift */,
+				2550028B27909A5D009A28CB /* APIVersion.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,14 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2550028E27909A5D009A28CB /* APIBuildable.swift in Sources */,
 				255002862790952D009A28CB /* Storyboards.swift in Sources */,
 				2550028227909504009A28CB /* Collection.swift in Sources */,
 				2550028427909504009A28CB /* NSObject.swift in Sources */,
 				2550023327908A51009A28CB /* ViewController.swift in Sources */,
+				2550028C27909A5D009A28CB /* APIProxy.swift in Sources */,
+				2550028D27909A5D009A28CB /* ApiResultable.swift in Sources */,
 				2550026F27909112009A28CB /* Environment.swift in Sources */,
 				255002722790915A009A28CB /* String.swift in Sources */,
 				2550022F27908A51009A28CB /* AppDelegate.swift in Sources */,
 				2550027F27909504009A28CB /* UIImageView.swift in Sources */,
+				2550028F27909A5D009A28CB /* APIVersion.swift in Sources */,
 				2550028327909504009A28CB /* UIStoryboard.swift in Sources */,
 				2550023127908A51009A28CB /* SceneDelegate.swift in Sources */,
 				2550028127909504009A28CB /* UIViewController.swift in Sources */,
