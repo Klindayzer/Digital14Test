@@ -18,6 +18,8 @@
 		2550026B27908F8A009A28CB /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2550026927908F8A009A28CB /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2550026F27909112009A28CB /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550026E27909112009A28CB /* Environment.swift */; };
 		255002722790915A009A28CB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255002712790915A009A28CB /* String.swift */; };
+		255002752790948D009A28CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 255002742790948D009A28CB /* Kingfisher */; };
+		25500278279094BE009A28CB /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 25500277279094BE009A28CB /* MBProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25500278279094BE009A28CB /* MBProgressHUD in Frameworks */,
+				255002752790948D009A28CB /* Kingfisher in Frameworks */,
 				2550026A27908F8A009A28CB /* AKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +199,10 @@
 			dependencies = (
 			);
 			name = Digital14Test;
+			packageProductDependencies = (
+				255002742790948D009A28CB /* Kingfisher */,
+				25500277279094BE009A28CB /* MBProgressHUD */,
+			);
 			productName = Digital14Test;
 			productReference = 2550022B27908A51009A28CB /* Digital14Test.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +253,10 @@
 				Base,
 			);
 			mainGroup = 2550022227908A50009A28CB;
+			packageReferences = (
+				255002732790948D009A28CB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				25500276279094BE009A28CB /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 2550022C27908A51009A28CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -573,6 +585,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		255002732790948D009A28CB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.1.2;
+			};
+		};
+		25500276279094BE009A28CB /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		255002742790948D009A28CB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 255002732790948D009A28CB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		25500277279094BE009A28CB /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25500276279094BE009A28CB /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2550022327908A50009A28CB /* Project object */;
 }
