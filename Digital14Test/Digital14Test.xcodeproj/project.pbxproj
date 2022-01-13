@@ -20,6 +20,13 @@
 		255002722790915A009A28CB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255002712790915A009A28CB /* String.swift */; };
 		255002752790948D009A28CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 255002742790948D009A28CB /* Kingfisher */; };
 		25500278279094BE009A28CB /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 25500277279094BE009A28CB /* MBProgressHUD */; };
+		2550027F27909504009A28CB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027927909504009A28CB /* UIImageView.swift */; };
+		2550028027909504009A28CB /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027A27909504009A28CB /* UITableView.swift */; };
+		2550028127909504009A28CB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027B27909504009A28CB /* UIViewController.swift */; };
+		2550028227909504009A28CB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027C27909504009A28CB /* Collection.swift */; };
+		2550028327909504009A28CB /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027D27909504009A28CB /* UIStoryboard.swift */; };
+		2550028427909504009A28CB /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550027E27909504009A28CB /* NSObject.swift */; };
+		255002862790952D009A28CB /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255002852790952D009A28CB /* Storyboards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		2550026927908F8A009A28CB /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2550026E27909112009A28CB /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		255002712790915A009A28CB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2550027927909504009A28CB /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		2550027A27909504009A28CB /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		2550027B27909504009A28CB /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		2550027C27909504009A28CB /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		2550027D27909504009A28CB /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		2550027E27909504009A28CB /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		255002852790952D009A28CB /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				2550023427908A51009A28CB /* Main.storyboard */,
+				255002852790952D009A28CB /* Storyboards.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -177,6 +192,12 @@
 		2550027027909146009A28CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2550027C27909504009A28CB /* Collection.swift */,
+				2550027E27909504009A28CB /* NSObject.swift */,
+				2550027927909504009A28CB /* UIImageView.swift */,
+				2550027D27909504009A28CB /* UIStoryboard.swift */,
+				2550027A27909504009A28CB /* UITableView.swift */,
+				2550027B27909504009A28CB /* UIViewController.swift */,
 				255002712790915A009A28CB /* String.swift */,
 			);
 			path = Extensions;
@@ -292,11 +313,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255002862790952D009A28CB /* Storyboards.swift in Sources */,
+				2550028227909504009A28CB /* Collection.swift in Sources */,
+				2550028427909504009A28CB /* NSObject.swift in Sources */,
 				2550023327908A51009A28CB /* ViewController.swift in Sources */,
 				2550026F27909112009A28CB /* Environment.swift in Sources */,
 				255002722790915A009A28CB /* String.swift in Sources */,
 				2550022F27908A51009A28CB /* AppDelegate.swift in Sources */,
+				2550027F27909504009A28CB /* UIImageView.swift in Sources */,
+				2550028327909504009A28CB /* UIStoryboard.swift in Sources */,
 				2550023127908A51009A28CB /* SceneDelegate.swift in Sources */,
+				2550028127909504009A28CB /* UIViewController.swift in Sources */,
+				2550028027909504009A28CB /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
