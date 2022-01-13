@@ -14,6 +14,8 @@
 		2550023827908A52009A28CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2550023727908A52009A28CB /* Assets.xcassets */; };
 		2550023B27908A52009A28CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2550023927908A52009A28CB /* LaunchScreen.storyboard */; };
 		2550024627908A52009A28CB /* Digital14TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550024527908A52009A28CB /* Digital14TestTests.swift */; };
+		2550026A27908F8A009A28CB /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550026927908F8A009A28CB /* AKNetworking.framework */; };
+		2550026B27908F8A009A28CB /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2550026927908F8A009A28CB /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2550026C27908F8A009A28CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2550026B27908F8A009A28CB /* AKNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2550022B27908A51009A28CB /* Digital14Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digital14Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2550022E27908A51009A28CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,7 @@
 		2550023C27908A52009A28CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2550024127908A52009A28CB /* Digital14TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Digital14TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2550024527908A52009A28CB /* Digital14TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digital14TestTests.swift; sourceTree = "<group>"; };
+		2550026927908F8A009A28CB /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2550026A27908F8A009A28CB /* AKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 				2550022D27908A51009A28CB /* Digital14Test */,
 				2550024427908A52009A28CB /* Digital14TestTests */,
 				2550022C27908A51009A28CB /* Products */,
+				2550026827908F8A009A28CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +148,14 @@
 			path = "App Modules";
 			sourceTree = "<group>";
 		};
+		2550026827908F8A009A28CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2550026927908F8A009A28CB /* AKNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +166,7 @@
 				2550022727908A51009A28CB /* Sources */,
 				2550022827908A51009A28CB /* Frameworks */,
 				2550022927908A51009A28CB /* Resources */,
+				2550026C27908F8A009A28CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
