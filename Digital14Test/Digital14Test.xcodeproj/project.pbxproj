@@ -16,6 +16,8 @@
 		2550024627908A52009A28CB /* Digital14TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550024527908A52009A28CB /* Digital14TestTests.swift */; };
 		2550026A27908F8A009A28CB /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550026927908F8A009A28CB /* AKNetworking.framework */; };
 		2550026B27908F8A009A28CB /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2550026927908F8A009A28CB /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2550026F27909112009A28CB /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550026E27909112009A28CB /* Environment.swift */; };
+		255002722790915A009A28CB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255002712790915A009A28CB /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		2550024127908A52009A28CB /* Digital14TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Digital14TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2550024527908A52009A28CB /* Digital14TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digital14TestTests.swift; sourceTree = "<group>"; };
 		2550026927908F8A009A28CB /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2550026E27909112009A28CB /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		255002712790915A009A28CB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				2550025E27908B21009A28CB /* App Delegate */,
 				2550026127908B64009A28CB /* App Modules */,
+				2550026D279090F3009A28CB /* Helper */,
 				2550025F27908B3E009A28CB /* UI */,
 				2550023727908A52009A28CB /* Assets.xcassets */,
 				2550023927908A52009A28CB /* LaunchScreen.storyboard */,
@@ -154,6 +159,23 @@
 				2550026927908F8A009A28CB /* AKNetworking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2550026D279090F3009A28CB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2550027027909146009A28CB /* Extensions */,
+				2550026E27909112009A28CB /* Environment.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2550027027909146009A28CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				255002712790915A009A28CB /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2550023327908A51009A28CB /* ViewController.swift in Sources */,
+				2550026F27909112009A28CB /* Environment.swift in Sources */,
+				255002722790915A009A28CB /* String.swift in Sources */,
 				2550022F27908A51009A28CB /* AppDelegate.swift in Sources */,
 				2550023127908A51009A28CB /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +384,9 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				UD_API_BASE_URL = "https://api.seatgeek.com";
+				UD_API_CLIENT_ID = MjUzNDA2NDJ8MTY0MjA4OTAyNS4xMDYwNDYy;
+				UD_CURRENT_SCHEME_NAME = Develop;
 			};
 			name = Debug;
 		};
@@ -414,6 +441,9 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				UD_API_BASE_URL = "https://api.seatgeek.com";
+				UD_API_CLIENT_ID = MjUzNDA2NDJ8MTY0MjA4OTAyNS4xMDYwNDYy;
+				UD_CURRENT_SCHEME_NAME = Production;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
